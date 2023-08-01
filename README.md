@@ -52,7 +52,9 @@ xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). Within the Vi
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-xxx4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+xxx4 Iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ***ping -t 10.x.x.x -4*** . We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Line. It should be timing out. Re-enable the ICMP traffic and observe the change, then stop the ping activity.
+
 </p>
 <br />
 xxx5 
