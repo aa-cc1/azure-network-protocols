@@ -46,7 +46,7 @@ xxx2  Locate the ***Public IP*** address for VM1 as we will use this to remote i
 </p>
 <br />
 
-xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and observe the ICMP traffic in Wireshark (request/reply). Try pinging a _www.google.com_ or any website and observe the traffic. 
+xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and filter for ICMP traffic in Wireshark. Try pinging a _www.google.com_ or any website and observe the traffic. 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
@@ -57,7 +57,8 @@ xxx4 Iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something l
 
 </p>
 <br />
-xxx5 
+xxx5 In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Back in Wireshark filter for DHCP. We are going to request a new IP address by running *ipconfig /renew*
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
