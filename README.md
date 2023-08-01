@@ -15,7 +15,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, DNS, HTTP/S, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -32,26 +32,34 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Actions and Observations</h2>
 
+_⚠️Before we start, if you haven't already, go ahead and create a **Microsoft Azure** account with an active subscription._
+#
+
+xxx1  We are going to create ***two*** VMs inside a RG(resource group); one will be running Windows 10 (vm1) and the other Ubuntu Linux(vm2). (use Netowrk Watcher via topology to confirm that they are both on the same network) 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+  
+xxx2  Locate the ***Public IP*** address for VM1 as we will use this to remote in using Windows Remote Desktop. Within the Virtual Machine we will _install_ ***Wireshark*** (use the available browser to search for Wireshark). 
+
 </p>
 <br />
+
+xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and observe the ICMP traffic in Wireshark (request/reply). Try pinging a _www.google.com_ or any website and observe the traffic. 
 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+xxx4 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
-
+xxx5 
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+xxx6 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
 </p>
 <br />
