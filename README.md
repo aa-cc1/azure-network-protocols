@@ -52,17 +52,19 @@ Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping V
 </p>
 
   
-We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Line. It should be timing out. Re-enable the ICMP traffic and observe the change, then stop the ping activity.
+We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Line. It should be timing out. Re-enable the ICMP traffic.
 <img src="Screenshot (157).png"/>
 
 </p>
 <br />
-In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Back in Wireshark filter for DHCP. We are going to request a new IP address by running _ipconfig /renew_  and observe the DHCP traffic.
-<img src="Screenshot (xxx).png"/>
+In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Observe the difference in Wireshark - VM2(10.0.0.5) is now sending data to VM1 (10.0.0.4). SSH allows us to remote in to another device through a command line interface. 
+<img src="Screenshot (159).png"/>
 <p>
 </p>
+Back in Wireshark filter for DHCP. We are going to request a new IP address by running _ipconfig /renew_  and observe the DHCP traffic.
 
 Filter for DNS traffic in Wireshark. From the command line use nslookup to find the IP addresses for google.com and disney.com (you can also try this with any public website). Observe the traffic in Wireshark.
+
 Filter for RDP traffic in Wireshark. Observe the traffic. Notice anything different? Its constantly updating because we have an active session from one computer to another.
 <img src="Screenshot (xxx).png"/>
 </p>
