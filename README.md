@@ -51,11 +51,11 @@ Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping V
 </p>
 <p>
 <br />  
-We're going to open the Nework Security Group in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Prompt. It should be timing out. Allowing the ICMP traffic will resume activity.
+We're going to open the Nework Security Group in Azure for VM2 (Ubuntu Linux) and disable icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Prompt. It should be timing out. Allowing the ICMP traffic will resume activity.
 <img src="Screenshot (157).png"/>
 </p>
 <br />
-In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Back in Wireshark filter for DHCP. We are going to request a new IP address by running _ipconfig /renew_  and observe the DHCP traffic.
+In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Back in Wireshark filter for DHCP. We are going to request a new IP address by running ipconfig /renew  and observe the DHCP traffic.
 <img src="Screenshot (160).png"/>
 </p>
 
