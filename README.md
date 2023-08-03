@@ -46,7 +46,7 @@ Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux).
 <img src="Screenshot (150).png"/>
 
 <br />
-Within the Virtual Machine, open Wiereshark and Powershell. We will ping VM2 in Powershell (or Command Prompt) and filter for ICMP traffic in Wireshark and then iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ***ping -t 10.x.x.x -4***.
+Within the Virtual Machine, open Wiereshark and Powershell. We will ping VM2 in Powershell (or Command Prompt) and filter for ICMP traffic in Wireshark and then iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ping -t 10.x.x.x -4 .
 <img src="Screenshot (153).png"/>
 </p>
 <p>
