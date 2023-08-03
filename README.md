@@ -62,7 +62,7 @@ Filter for DNS traffic in Wireshark. From the command line use nslookup to find 
 <img src="Screenshot (162).png"/>
 
   
-Filter for RDP traffic in Wireshark. Observe the traffic. Notice anything different? Its constantly updating because we have an active session from one computer to another.
-  
+Filter for RDP traffic in Wireshark. Observe the traffic. Notice anything different? Its constantly updating because we have an active session from one computer to another
+<img src="Screenshot (163).png"/>
 </p>
 <br />
