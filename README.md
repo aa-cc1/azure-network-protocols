@@ -25,7 +25,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Observe ICMP traffic and disable ICMP requests
+- Observe ICMP traffic and disable inbound requests
 - Observe SSH, DHCP, DNS, and RDP traffic in Wireshark
 - Utilize CLI commands such as ping, nslookup, and ipconfig /renew
 
