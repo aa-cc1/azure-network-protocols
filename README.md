@@ -61,7 +61,7 @@ In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubunt
 <img src="Screenshot (159).png"/>
 <p>
 </p>
-Back in Wireshark filter for DHCP. We are going to request a new IP address by running _ipconfig /renew_  and observe the DHCP traffic.
+Back in Wireshark filter for DHCP. We are going to request a new IP address by running ipconfig/renew and observe the DHCP traffic.
 <img src="Screenshot (160).png"/>
 
 Filter for DNS traffic in Wireshark. From the command line use nslookup to find the IP addresses for google.com and disney.com (you can also try this with any public website). Observe the traffic in Wireshark.
