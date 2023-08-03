@@ -41,7 +41,7 @@ Locate the ***Public IP*** address for VM1 as we will use this to remote in usin
 </p>
 <br />
 
-xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). 
+Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). 
 <img src="Screenshot (150).png"/>
 
 Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and filter for ICMP traffic in Wireshark. Try pinging a _www.google.com_ or any website and observe the traffic. 
