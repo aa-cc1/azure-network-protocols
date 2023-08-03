@@ -54,13 +54,14 @@ We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Lin
 </p>
 <br />
 In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubuntu Linux). Back in Wireshark filter for DHCP. We are going to request a new IP address by running _ipconfig /renew_  and observe the DHCP traffic.
-
-<p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="Screenshot (160).png"/>
 </p>
 
 <p>
 Filter for DNS traffic in Wireshark. From the command line use nslookup to find the IP addresses for google.com and disney.com (you can also try this with any public website). Observe the traffic in Wireshark.
+<img src="Screenshot (162).png"/>
+
+  
 Filter for RDP traffic in Wireshark. Observe the traffic. Notice anything different? Its constantly updating because we have an active session from one computer to another.
   
 </p>
