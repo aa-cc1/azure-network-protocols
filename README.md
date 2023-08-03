@@ -36,9 +36,10 @@ xxx1  We are going to create ***two*** VMs inside a RG(resource group); one will
 </p>
 <p>
   
-xxx2  Locate the ***Public IP*** address for VM1 as we will use this to remote in using Windows Remote Desktop. Within the Virtual Machine we will _install_ ***Wireshark*** (use the available browser to search for Wireshark). 
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+Locate the ***Public IP*** address for VM1 as we will use this to remote in using Windows Remote Desktop. Within the Virtual Machine we will _install_ ***Wireshark*** (use the available browser to search for Wireshark). 
+<img src="Screenshot (145).png"/>
 </p>
+<img src="pic1of2"/>
 <br />
 
 xxx3 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and filter for ICMP traffic in Wireshark. Try pinging a _www.google.com_ or any website and observe the traffic. 
