@@ -30,9 +30,9 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 _⚠️Before we start, if you haven't already, go ahead and create a **Microsoft Azure** account with an active subscription._
 #
 
-xxx1  We are going to create ***two*** VMs inside a RG(resource group); one will be running Windows 10 (vm1) and the other Ubuntu Linux(vm2). (use Netowrk Watcher via topology to confirm that they are both on the same network) 
+We are going to create ***two*** VMs inside a RG(resource group); one will be running Windows 10 (vm1) and the other Ubuntu Linux(vm2). (use Netowrk Watcher via topology to confirm that they are both on the same network) 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+xxx
 </p>
 <p>
   
