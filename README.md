@@ -44,14 +44,14 @@ Locate the ***Public IP*** address for VM1 as we will use this to remote in usin
 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). 
 <img src="Screenshot (150).png"/>
 
-Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Line) and filter for ICMP traffic in Wireshark. Try pinging a _www.google.com_ or any website and observe the traffic. 
-
+Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Prompt) and filter for ICMP traffic in Wireshark and then iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ***ping -t 10.x.x.x -4***.
+<img src="Screenshot (153).png"/>
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
   
-xxx4 Iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ***ping -t 10.x.x.x -4*** . We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Line. It should be timing out. Re-enable the ICMP traffic and observe the change, then stop the ping activity.
+xxx4 We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Line. It should be timing out. Re-enable the ICMP traffic and observe the change, then stop the ping activity.
 
 </p>
 <br />
