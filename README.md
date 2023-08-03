@@ -30,9 +30,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 _⚠️Before we start, if you haven't already, go ahead and create a **Microsoft Azure** account with an active subscription._
 #
 
-We are going to create ***two*** VMs inside a RG(resource group); one will be running Windows 10 (vm1) and the other Ubuntu Linux(vm2). (use Netowrk Watcher via topology to confirm that they are both on the same network) 
+We're going to create ***two*** VMs inside a RG(resource group); one will be running Windows 10 (vm1) and the other Ubuntu Linux (vm2). 
+(use Netowrk Watcher via topology to confirm that they are both on the same network) 
 <p>
-xxx
+
 </p>
 <p>
   
@@ -44,12 +45,13 @@ Locate the ***Public IP*** address for VM1 as we will use this to remote in usin
 Retrieve the ***Private IP*** address for VM2 (Ubuntu Linux). 
 <img src="Screenshot (150).png"/>
 
+<br />
 Within the Virtual Machine, open ***Wiereshark and Powershell***. We will ping VM2 in Powershell (or Command Prompt) and filter for ICMP traffic in Wireshark and then iniate a _perpetual_ ping to VM2 (Ubuntu Linux). It should look something like this ***ping -t 10.x.x.x -4***.
 <img src="Screenshot (153).png"/>
 </p>
 <p>
-  
-We're going to open the ***Nework Security Group*** in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Prompt. It should be timing out. Allowing the ICMP traffic will resume activity.
+<br />  
+We're going to open the Nework Security Group in Azure for VM2 (Ubuntu Linux) and _disable_ icoming ICMP traffic. Go back to the Virtual Machine and observe the traffic in Wireshark and Powershell/Command Prompt. It should be timing out. Allowing the ICMP traffic will resume activity.
 <img src="Screenshot (157).png"/>
 </p>
 <br />
@@ -57,11 +59,11 @@ In Wireshark filter for SSH traffic. We are going to use SSH into the VM2 (Ubunt
 <img src="Screenshot (160).png"/>
 </p>
 
-<p>
+<br />
 Filter for DNS traffic in Wireshark. From the command line use nslookup to find the IP addresses for google.com and disney.com (you can also try this with any public website). Observe the traffic in Wireshark.
 <img src="Screenshot (162).png"/>
 
-  
+ <br /> 
 Filter for RDP traffic in Wireshark. Observe the traffic. Notice anything different? Its constantly updating because we have an active session from one computer to another
 <img src="Screenshot (163).png"/>
 </p>
